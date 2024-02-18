@@ -1,0 +1,316 @@
+@import "fonts.css";
+
+/* ****Root**** */
+
+:root {
+    --RBlack: "Roboto-Black";
+    --RB: "Roboto-Bold";
+    --RBoldI: "Roboto-BoldItalic";
+    --RI: "Roboto-Italic";
+    --RL: "Roboto-Light";
+    --RM: "Roboto-Medium";
+    --RR: "Roboto-Regular";
+    --Uni: 'ofont.ru_Uni\ Sans';
+    --Gothic: 'ofont.ru_Century\ Gothic';
+    --black: #000;
+    --ligth-black: #2D2D2D;
+    --ligth-green: #25CF43;
+    --grey-black: #484848;
+    --light-grey: #C4C4C4;
+    --grey: #6F6F6F;
+    --blue: #2F6DCE;
+    --v-light-blue: #E8F6FF;
+    --linear-greadient-blue: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%), #CFE900;
+    --ligth-blue: #005AE9;
+    --blue-light: #1567E9;
+    --dark-blue: #113671;
+    --footer-blue: #172233;
+    --white: #fff;
+    --ligth-red: #E05C5C;
+    --red: #FF3939;
+}
+
+
+/* ****Root end**** */
+
+.company {
+    background: var(--v-light-blue);
+    padding-top: 86px;
+    padding-bottom: 90px;
+}
+
+.company-title {
+    color: var(--white);
+    font-family: var(--Uni);
+    font-size: 32px;
+    line-height: 40px;
+    background: var(--blue);
+    border-radius: 10px;
+    width: 928.084px;
+    padding: 8px 30px;
+    clip-path: polygon(0% 0%, 100% 0, 97% 100%, 0% 100%);
+}
+
+.company-top {
+    display: flex;
+    position: relative;
+    column-gap: 30px;
+}
+
+.company-left__text {
+    color: var(--ligth-black);
+    font-family: var(--RR);
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 630px;
+    width: 100%;
+    margin-top: 29px;
+}
+
+.company-left__text span {
+    color: var(--ligth-black);
+    font-family: var(--RB);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.company-right__icon {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 595px;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--blue-light);
+    height: 38px;
+    top: 152px;
+}
+
+.company-top__img {
+    max-width: 630px;
+    width: 100%;
+    max-height: 276px;
+    height: 100%;
+    margin-top: 33px;
+}
+
+.company-left__icon {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 1245px;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--blue-light);
+    height: 38px;
+    top: 152px;
+}
+
+
+
+/* ****company-bottom start */
+
+.company-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+}
+
+.company-left__item {
+    border: 1px solid #2F6DCE;
+    max-width: 280px;
+    width: 100%;
+    padding: 30px 18px;
+}
+
+.company-left__item-title {
+    color: var(--blue);
+    font-family: var(--RB);
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 202px;
+    width: 100%;
+    margin-left: 15px;
+}
+
+
+.company-left__item-info {
+    margin-bottom: 19px;
+    margin-top: 12px;
+    padding-bottom: 19px;
+}
+
+.company-left__info-text {
+    color: var(--grey);
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 30.5px;
+}
+
+.info-icon {
+    color: var(--blue);
+    font-size: 14px;
+    padding-right: 8px;
+}
+
+.company-left__item-btn {
+    color: var(--ligth-green);
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 100%;
+    margin-top: 30px;
+    border-radius: 84px;
+    border: 1px solid var(--ligth-green);
+    max-width: 240px;
+    width: 100%;
+    text-align: center;
+    padding: 14px 27px;
+}
+
+.company-left__item-title span {
+    display: flex;
+}
+
+.company-left__item-group {
+    margin: 12px;
+}
+
+.item-icon {
+    width: 35px;
+    height: 35px;
+    transform: rotate(-45deg);
+    background: var(--blue);
+    padding: 14px;
+    color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-left__group-title {
+    color: var(--ligth-black);
+    font-family: var(--RB);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.company-left__group-text {
+    color: var(--grey);
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 190px;
+    width: 100%;
+}
+
+
+.company-right__item {
+    border-radius: 6px;
+    background: var(--white);
+    max-width: 300px;
+    width: 100%;
+    max-height: 338px;
+    height: 100%;
+    position: relative;
+}
+
+.company-right__item-info {
+    position: absolute;
+    top: 60px;
+}
+
+.company-right__item-title {
+    color: var(--ligth-black);
+    text-align: center;
+    font-family: var(--RB);
+    font-size: 18px;
+    line-height: 22.5px;
+    text-transform: uppercase;
+    max-width: 250px;
+    margin-left: 21px;
+}
+
+.company-right__item-btn {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 100%;
+    border-radius: 27px;
+    border: 1px solid var(--blue);
+    /* hammasiga yozib chiq */
+    background: var(--blue);
+    padding: 14px 54px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    margin-top: 17px;
+    margin-left: 54px;
+}
+
+.company-group__item-first {
+    position: relative;
+}
+
+.company-group__title-first {
+    color: var(--grey-black);
+    font-family: var(--RR);
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration-line: underline;
+    width: 141px;
+    text-align: center;
+    position: absolute;
+    top: 63px;
+    left: 80px;
+}
+
+.company-group__item-second {
+    border-radius: 6px;
+    border: 1px dashed #1567E9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 154px;
+    justify-content: center;
+    margin-top: 29px;
+    gap: 20px;
+}
+
+.company-group__title-second {
+    color: var(--ligth-black);
+    text-align: center;
+    font-family: var(--RR);
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 159px;
+    width: 100%;
+}
+
+.company-item__map {
+    max-width: 315px;
+    width: 100%;
+    min-height: 154px;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.group-icon__first {
+    font-size: 20px;
+    color: blue;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.group-icon__second {
+    font-size: 20px;
+    color: blue;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 8px;
+    margin-left: 10px;
+}

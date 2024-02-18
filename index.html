@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>dz-20 teplo okna</title>
+	<link rel="stylesheet" href="style/footer.css">
+	<link rel="stylesheet" href="style/all.min.css" />
+	<link rel="stylesheet" href="style/main/air.css" />
+	<link rel="stylesheet" href="style/main/company.css" />
+	<link rel="stylesheet" href="style/main/house.css" />
+	<link rel="stylesheet" href="style/main/order.css" />
+	<link rel="stylesheet" href="style/main/window.css" />
+	<link rel="stylesheet" href="style/main/winter.css" />
+	<link rel="stylesheet" href="style/main/eco.css" />
+	<link rel="stylesheet" href="style/nav.css">
+	<link rel="stylesheet" href="style/prenav.css">
+	<link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="prenav container">
+			<h2 class="prenav-title">СЛУЖБА РЕМОНТА НА ПРОЛЕТАРСКОЙ</h2>
+			<div class="prenav-location">
+				<a href="#!" class="prenav-text">
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M11 1.83331C15.5563 1.83331 19.25 5.48689 19.25 9.99381C19.25 12.9762 16.7545 16.1295 11.8692 19.5645L11 20.1666L10.4755 19.8047C5.36288 16.2762 2.75 13.0455 2.75 9.99381C2.75 5.48689 6.44365 1.83331 11 1.83331ZM11 3.64676C7.45617 3.64676 4.58333 6.48843 4.58333 9.99382C4.58333 12.1961 6.68866 14.8834 11 17.95C15.3113 14.8834 17.4167 12.1961 17.4167 9.99382C17.4167 6.48843 14.5438 3.64676 11 3.64676ZM11 5.49998C13.025 5.49998 14.6667 7.1416 14.6667 9.16665C14.6667 11.1917 13.025 12.8333 11 12.8333C8.97496 12.8333 7.33333 11.1917 7.33333 9.16665C7.33333 7.1416 8.97496 5.49998 11 5.49998ZM11 7.33331C9.98748 7.33331 9.16667 8.15412 9.16667 9.16665C9.16667 10.1792 9.98748 11 11 11C12.0125 11 12.8333 10.1792 12.8333 9.16665C12.8333 8.15412 12.0125 7.33331 11 7.33331Z"
+							fill="#6F6F6F" />
+					</svg>
+					<pre>
+ Работаем по Томску,
+ Северску и области</pre>
+				</a>
+
+				<button class="prenav-button">
+					<a href="#!" class="prenav-btn">
+						<i class="fa-brands fa-whatsapp"></i>
+						<pre>Написать в Whatsapp</pre>
+					</a>
+				</button>
+			</div>
+
+			<div class="prenav-contact">
+				<svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+					<path
+						d="M17.2118 13.9769C16.6237 13.6288 15.5961 12.7776 14.6386 13.6887C14.4127 13.9187 14.2631 14.0727 14.1664 14.1716C13.2967 13.7596 11.7501 12.2664 11.3491 11.3241C12.77 10.0325 12.1123 9.57178 10.7149 6.91766C10.4761 6.50568 10.089 6.2323 9.6166 6.2323C9.03799 6.2323 8.81185 6.5174 7.98532 7.35382C6.9504 8.40082 6.34304 8.72968 6.73232 10.5038C7.84011 15.5538 15.233 20.6116 17.3266 18.3506C19.0366 16.6521 19.3664 16.4912 19.2663 15.723C19.1401 14.9582 18.5532 14.7707 17.2118 13.9769ZM16.2961 17.3937C16.1765 17.5264 15.4606 17.5702 14.273 17.0773C12.021 16.1427 9.6849 13.6902 8.72763 11.8593C8.42275 11.2761 7.74856 9.54688 8.12283 9.20959C8.2759 9.06439 9.30514 8.01337 9.56845 7.75867C10.2694 9.08728 10.6107 9.70837 10.724 9.96143C10.5224 10.2727 9.87771 10.5164 9.87771 11.28C10.1613 12.7717 12.1021 14.5999 13.262 15.2801C14.446 15.9744 14.8249 15.5103 15.2561 15.0682C15.6411 14.6738 15.6082 14.6978 15.6483 14.6938L17.7663 15.9385C17.518 16.1982 16.4675 17.2135 16.2961 17.3937Z"
+						fill="#2F6DCE" />
+					<path
+						d="M13 0.5C6.367 0.5 1 5.86792 1 12.5C1 19.133 6.36792 24.5 13 24.5C19.633 24.5 25 19.1321 25 12.5C25 5.867 19.6321 0.5 13 0.5ZM13 23.0938C7.14429 23.0938 2.40625 18.3548 2.40625 12.5C2.40625 6.64429 7.1452 1.90625 13 1.90625C18.8557 1.90625 23.5938 6.6452 23.5938 12.5C23.5938 18.3557 18.8548 23.0938 13 23.0938Z"
+						fill="#2F6DCE" stroke="#2F6DCE" stroke-width="0.2" />
+				</svg>
+				<a href="#!" class="prenav-tel"> 8 (3822) 50-05-12</a>
+			</div>
+
+		</div>
+
+		<nav class="nav container">
+			<a href="#!" class="logo">
+				<img src="images/logo.png" alt="png" />
+			</a>
+			<ul class="nav__list">
+				<li class="nav-list__link">Подарок от ПРОФИ</li>
+				<li class="nav-list__link nav-list__miniLink">Наши СпецЗаказы</li>
+				<li class="nav-list__link">О компании</li>
+			</ul>
+		</nav>
+
+		<div class="header-top container">
+			<div class="header-top__left">
+				<h1 class="header-left__title-first">СЕЗОНКА ДЛЯ ОКОН 2020</h1>
+				<h2 class="header-left__title-second">
+					ХОРОША ЗИМА, КОГДА ТЕПЛО У ОКНА!
+				</h2>
+				<p class="header-left__text">
+					Профессиональные услуги по ремонту и обслуживанию окон
+				</p>
+				<img src="images/Vector 1.svg" alt="png" class="header-left__img" />
+				<a href="#!" class="header-left__btn">КАЛЬКУЛЯТОР УСЛУГ</a>
+				<div class="header-left__group">
+					<p class="header-group__text">
+						Рассчитаем стоимость услуг за 5 минут!
+						подарим скидку или подарок!
+					</p>
+				</div>
+			</div>
+			<div class="header-top__right">
+				<div class="header-right__info">
+					<i class="fa-solid fa-circle-chevron-right header-right__icon"></i>
+					<h2 class="header-info__title">
+						ЗИМНИЙ РЕЖИМ ДЛЯ ОКОН
+					</h2>
+				</div>
+				<div class="header-right__info">
+					<i class="fa-solid fa-circle-chevron-right header-right__icon"></i>
+					<h2 class="header-info__title">
+						БОЛЬШАЯ РЕГУЛИРОВКА ОКОН
+					</h2>
+				</div>
+				<div class="header-right__info">
+					<i class="fa-solid fa-circle-chevron-right header-right__icon"></i>
+					<h2 class="header-info__title">
+						КОМПЛЕКСНАЯ ПОДГОТОВКА
+					</h2>
+				</div>
+				<div class="header-right__info">
+					<i class="fa-solid fa-circle-chevron-right header-right__icon"></i>
+					<h2 class="header-info__title">
+						ПРИТОЧНЫЕ КЛАПАНЫ AIR-BOX
+					</h2>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+
+		<section class="winter">
+			<div class="container">
+				<h2 class="winter-title">ВКЛЮЧАЕМ ЗИМНИЙ РЕЖИМ ПО НИЗКОЙ ЦЕНЕ!</h2>
+				<div class="winter-group">
+					<div class="winter-group__box">
+						<div class="winter-box__top">
+							<h3 class="winter-top__title">Что входит в услугу?</h3>
+
+							<div class="winter-top__gaps">
+								<p class="winter-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Очистка уплотнителя от загрязнений и смазка силиконом;
+								</p>
+								<p class="winter-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Усиление прижима;
+								</p>
+								<p class="winter-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Смазка и протяжка фурнитуры;
+								</p>
+								<p class="winter-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Гарантия: отсутствует.
+								</p>
+
+							</div>
+						</div>
+
+						<div class="winter-box__bottom">
+							<h3 class="winter-bottom__title">Сколько стоит?</h3>
+							<ul class="winter-bottom__list">
+								<li class="winter-bottom__link">
+									<i class="fa-solid fa-circle bottom-icon"></i> Форточка (S< 0,5 м2.): 250 руб. </li>
+								<li class="winter-bottom__link">
+									<i class="fa-solid fa-circle bottom-icon"></i> Оконная
+									створка (0,5< S < 1 м2): 350 руб. </li>
+								<li class="winter-bottom__link">
+									<i class="fa-solid fa-circle bottom-icon"></i> Балконная
+									дверь: 450 руб.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="winter-right">
+						<h3 class="winter-right__title">Что Вы получите в итоге?</h3>
+						<ul class="winter-right__list">
+							<li class="winter-right__link">
+								• после смазки фурнитуры: бесшумная и легкая работа фурнитуры,
+								увеличение срока службы;
+							</li>
+							<li class="winter-right__link">
+								• после обработки уплотнителя: повышение эластичности и
+								долговечности уплотнителя, уплотнитель не примерзает к
+								пластику, более плотное прилегание уплотнителя повышает
+								герметичность;
+							</li>
+							<li class="winter-right__link">
+								• после усиления прижима: уменьшение продуваний, повышение
+								шумоизоляции;
+							</li>
+							<li class="winter-right__link">
+								• общий результат: повышение срока.
+							</li>
+						</ul>
+						<div class="winter-right__info">
+							<i class="fa-solid fa-triangle-exclamation right-icon"></i>
+							<p class="winter-info__text">
+								Внимание! Данная услуга подходит для створок с полностью
+								исправной фурнитурой и уплотнителем, и не устраняет дефекты в
+								работе фурнитуры. Если в работе створок есть какие-то дефекты,
+								то необходимо проводить Большую Регулировку.
+							</p>
+						</div>
+						<div class="winter-right__conter">
+							<button class="winter-right__btn">выезд мастера</button>
+							<p class="winter-right__text">
+								*Диагностика бесплатно (при условии проведения работ).
+								<br>
+								Выезд в пригород и удаленные районы оплачиваются по тарифам организации.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="winter-box">
+					<h3 class="winter-box__title">Вместе с Зимником дешевле!</h3>
+
+					<div class="winter-box__item">
+						<i class="fa-solid fa-arrow-left math-icon__left"></i>
+						<div class="winter-item__info">
+							<span class="winter-item__sale">- 20 %</span>
+						</div>
+						<div class="winter-item__group">
+							<img src="images/item img.jpg" alt="jpg" />
+							<h3 class="winter-group__title">Детские блокираторы</h3>
+						</div>
+						<div class="winter-item__math">
+							<div class="winter-math__procent">700 руб – 20% =</div>
+							<div class="winter-math__price">560 руб!</div>
+						</div>
+						<i class="fa-solid fa-arrow-right math-icon__right"></i>
+					</div>
+
+					<ul class="winter-box__list">
+						<li class="winter-box__link">-20%</li>
+						<li class="winter-box__link">-20%</li>
+						<li class="winter-box__link">-20%</li>
+						<li class="winter-box__link">-20%</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="eco">
+			<div class="container">
+				<div class="eco-info__title">
+					<h2 class="eco-title">Большая регулировка окон на зиму</h2>
+				</div>
+				<div class="eco-group">
+					<div class="eco-group__right">
+						<img src="images/eco-img.jpg" alt="jpg" class="eco-right__img" />
+						<h3 class="eco-right__title">Что Вы получите в итоге?</h3>
+						<ul class="eco-right__list">
+							<li class="eco-right__link">
+								• после смазки фурнитуры: бесшумная и легкая работа фурнитуры,
+								увеличение срока службы;
+							</li>
+							<li class="eco-right__link">
+								• после обработки уплотнителя: повышение эластичности и
+								долговечности уплотнителя, уплотнитель не примерзает к
+								пластику, более плотное прилегание уплотнителя повышает
+								герметичность;
+							</li>
+							<li class="eco-right__link">
+								• после усиления прижима: уменьшение продуваний, повышение
+								шумоизоляции;
+							</li>
+							<li class="eco-right__link">
+								• общий результат: повышение срока.
+							</li>
+						</ul>
+						<div class="eco-right__info">
+							<i class="fa-solid fa-triangle-exclamation right-icon"></i>
+							<p class="eco-info__text">
+								Внимание: в данную услугу не входит исправление геометрии
+								(устранение геометрического провисания створки), сложный
+								ремонт и замена элементов фурнитуры.
+							</p>
+						</div>
+						<div class="eco-right__conter">
+							<button class="eco-right__btn">выезд мастера</button>
+							<p class="eco-right__text">
+								*Диагностика бесплатно (при условии проведения работ).
+								<br>
+								Выезд в пригород и удаленные районы оплачиваются по тарифам организации.
+							</p>
+						</div>
+					</div>
+
+					<div class="eco-group__box">
+						<div class="eco-box__top">
+							<h3 class="eco-top__title">Что входит в услугу?</h3>
+
+							<div class="eco-top__gaps">
+								<p class="eco-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Настройка работы фурнитуры, мелкий ремонт, не требующий
+									снятия створки и замены деталей;
+								</p>
+								<p class="eco-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Смазка фурнитуры, протяжка винтов и креплений;
+								</p>
+								<p class="eco-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Усиление прижима створки;
+								</p>
+								<p class="eco-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Правильная расстановка ответных планок;
+								</p>
+								<p class="eco-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Очистка уплотнителя от загрязнений, смазка уплотнителя
+									силиконом;
+								</p>
+								<p class="eco-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Гарантия: 6 месяцев.
+								</p>
+							</div>
+						</div>
+
+						<div class="eco-box__bottom">
+							<h3 class="eco-bottom__title">Сколько стоит?</h3>
+							<ul class="eco-bottom__list">
+								<li class="eco-bottom__link">
+									<i class="fa-solid fa-circle bottom-icon"></i>Окно/форточка
+									(зависит от S) 0,5м²–0,9м²-1,1м² 300–600–700 руб.
+								</li>
+								<li class="eco-bottom__link">
+									<i class="fa-solid fa-circle bottom-icon"></i> Балконная
+									дверь (зависит от S) 1,1м² – 1,4 м²-1,7м² 700 – 800 – 950
+									руб.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="eco-box">
+					<h3 class="eco-box__title">Вместе с Зимником дешевле!</h3>
+					<div class="eco-box__item">
+						<i class="fa-solid fa-arrow-left math-icon__left"></i>
+						<div class="eco-item__info">
+							<span class="eco-info__sale">- 20 %</span>
+						</div>
+						<div class="eco-item__group">
+							<img src="images/group-img-1.jpg" alt="jpg" class="eco-group__img" />
+							<div class="eco-group__titles">
+								<h3 class="eco-group__title-one">
+									Приточный клапан на окно
+								</h3>
+								<h3 class="eco-group__title-two">Air-Box ECO</h3>
+							</div>
+						</div>
+						<div class="eco-item__math">
+							<div class="eco-math__procent">2500 руб – 10% =</div>
+							<div class="eco-math__price">2250 руб!</div>
+						</div>
+						<i class="fa-solid fa-arrow-right math-icon__right"></i>
+					</div>
+					<ul class="eco-box__list">
+						<li class="eco-box__link">-10%</li>
+						<li class="eco-box__link">-10%</li>
+						<li class="eco-box__link">-10%</li>
+						<li class="eco-box__link">-10%</li>
+						<li class="eco-box__link">-10%</li>
+						<li class="eco-box__link">-10%</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="window">
+			<div class="container">
+				<h2 class="window-title">ВКЛЮЧАЕМ ЗИМНИЙ РЕЖИМ ПО НИЗКОЙ ЦЕНЕ!</h2>
+				<div class="window-group">
+					<div class="window-group__box">
+						<div class="window-box__top">
+							<h3 class="window-top__title">Что входит в услугу?</h3>
+
+							<div class="window-top__gaps">
+								<p class="window-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Замена уплотнителя на створке и раме;
+								</p>
+								<p class="window-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Настройка работы фурнитуры,
+								</p>
+								<p class="window-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Смазка фурнитуры, протяжка винтов и креплений;
+								</p>
+								<p class="window-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Установка оптимального прижима створки;
+								</p>
+								<p class="window-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Правильная расстановка ответных планок;
+								</p>
+								<p class="window-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Исправление геометрического провисания створки;
+								</p>
+								<p class="window-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									Увеличенная гарантия: 12 месяцев.
+								</p>
+								<p class="window-gaps__text">
+									<i class="fa-regular fa-circle-check top-icon"></i>
+									мелкий ремонт, не требующий
+									замены деталей;
+								</p>
+							</div>
+						</div>
+
+						<div class="window-box__bottom">
+							<h3 class="window-bottom__title">Сколько стоит?</h3>
+							<ul class="window-bottom__list">
+								<li class="window-bottom__link">
+									<i class="fa-solid fa-circle bottom-icons"></i>
+									Створка ПВХ (S= 0,5м²– 0,9м² -1,1м²)
+								</li>
+								<li class="window-bottom__link">
+									<i class="fa-solid fa-circle bottom-icons"></i> уплотнитель
+									1000 – 1700 – 1900 руб.
+								</li>
+								<li class="window-bottom__link">
+									<i class="fa-solid fa-circle bottom-icons"></i>
+									Белый/Серый уплотнитель 1150 – 1850 – 2050 руб.
+								</li>
+								<li class="window-bottom__link">
+									<i class="fa-solid fa-circle bottom-icons"></i> Балконная
+									дверь ПВХ ( S= 1,1м² – 1,4 м² - 1,7м²)
+								</li>
+								<li class="window-bottom__link">
+									<i class="fa-solid fa-circle bottom-icons"></i> Черный
+									уплотнитель 2000 – 2500 – 3000 руб.
+								</li>
+								<li class="window-bottom__link">
+									<i class="fa-solid fa-circle bottom-icons"></i>
+									Белый/Серый уплотнитель 2150 – 2650 – 3300 руб.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="window-right">
+						<img src="images/window-img.jpg" alt="jpg" class="window-right__img" />
+						<h3 class="window-right__title">
+							Подробнее о комплексном обслуживании:
+						</h3>
+						<ul class="window-right__list">
+							<li class="window-right__link">
+								<span>•</span> Самая популярная услуга по восстановлению
+								оконных створок и дверей, включает полный перечень работ для
+								восстановления заводских характеристик и даже сделать их
+								лучше;
+							</li>
+							<li class="window-right__link">
+								<span>•</span> Рекомендуем устанавливать серый или белый
+								уплотнитель, даже если на окнах стоит черный, т.к. у него
+								больше срок службы и выше качество. Также, створки приобретают
+								более приятный внешний вид;
+							</li>
+							<li class="window-right__link">
+								<span>•</span><u>
+									При комплексном обслуживании на регулировку даем увеличенную
+									гарантию 12 мес.</u>
+							</li>
+						</ul>
+						<div class="window-right__conter">
+							<button class="window-right__btn">выезд мастера</button>
+							<p class="winter-right__text">
+								*Диагностика бесплатно (при условии проведения работ).
+								<br>
+								Выезд в пригород и удаленные районы оплачиваются по тарифам организации.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="window-box">
+					<h3 class="window-box__title">Вместе с Зимником дешевле!</h3>
+					<div class="window-box__item">
+						<i class="fa-solid fa-arrow-left math-icon__left"></i>
+						<div class="window-item__info">
+							<span class="window-info__sale">- 20 %</span>
+						</div>
+						<div class="window-item__group">
+							<img src="images/group-img-2.png" alt="png" class="window-group__img" />
+							<div class="window-group__titles">
+								<h3 class="window-group__title-one">На всю продукцию</h3>
+								<h3 class="window-group__title-two">Air-Box</h3>
+							</div>
+						</div>
+
+						<div class="window-item__procent">-20%</div>
+
+						<i class="fa-solid fa-arrow-right math-icon__right"></i>
+					</div>
+					<ul class="window-box__list">
+						<li class="window-box__miniLink">ПОДАРОК</li>
+						<li class="window-box__link">-30%</li>
+						<li class="window-box__link">-30%</li>
+						<li class="window-box__link">-30%</li>
+						<li class="window-box__link">-30%</li>
+						<li class="window-box__link">-30%</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="air">
+			<div class="container">
+				<div class="air-title__info">
+					<h2 class="air-title">ПРИТОЧНЫЕ КЛАПАНЫ НА ОКНА AIR-BOX</h2>
+				</div>
+
+				<div class="air-top">
+					<img src="images/air-img.jpg" alt="jpg" class="air-top__img" />
+					<div class="air-top__group">
+						<p class="air-group__text">
+							<span>Аir-Box</span> – призваны обеспечить нормальный
+							воздухообмен в квартирах, домах и офисах, оборудованных
+							герметичными современными окнами.
+						</p>
+						<ul class="air-group__list">
+							<div class="air-list__info">
+								<i class="fa-solid fa-xmark icon-one"></i>
+								<li class="air-info__link">
+									затхлый воздух, повышенная влажность, появление плесени и
+									грибка на окнах и стенах.
+								</li>
+							</div>
+							<div class="air-list__info">
+								<i class="fa-solid fa-check icon-two"></i>
+								<li class="air-info__link">
+									не надо открывать окна, что исключает попадание шума, пыли,
+									резкие перепады температур.
+								</li>
+							</div>
+							<div class="air-list__info">
+								<i class="fa-solid fa-shield icon-three"></i>
+								<li class="air-info__link">Гарантия: 12 месяцев.</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+
+				<div class="air-middle">
+					<h2 class="air-middle__title">
+						ПОДБЕРЕМ ОПТИМАЛЬНЫЙ ВАРИАНТ ДЛЯ ВАС!
+					</h2>
+
+					<div class="air-middle__group">
+						<div class="air-group__item">
+							<img src="images/romb.png" alt="png" class="air-item__romb">
+							<h2 class="air-item__title">Air-Box Comfort</h2>
+							<p class="air-item__text">
+								Установка на створку окна, без фрезеровки. Расход воздуха до
+								31 м3/час, плавная ручная регулировка, размеры
+								350x42,5x8,5/20,5 мм, цвет белый/коричневый.
+							</p>
+							<div class="air-item__price">1500 руб.</div>
+							<div class="air-item__miniText">(с монтажом)</div>
+						</div>
+						<div class="air-group__item">
+							<img src="images/romb.png" alt="png" class="air-item__romb">
+							<h2 class="air-item__title">Air-Box Comfort S</h2>
+							<p class="air-item__text">
+								Установка на створку окна, без фрезеровки. Расход воздуха до
+								31 м3/час, плавная ручная регулировка, размеры
+								350x42,5x8,5/20,5 мм, цвет белый/коричневый.
+							</p>
+							<div class="air-item__price">3500 руб.</div>
+							<div class="air-item__miniText">
+								(монтаж+уличный козырек)
+							</div>
+						</div>
+						<div class="air-group__item">
+							<img src="images/romb.png" alt="png" class="air-item__romb">
+							<div class="air-item__titles">
+								<h2 class="air-titles__one">Air-Box ECO </h2>
+								<h3 class="air-titles__two">с фильтром класса G3</h3>
+							</div>
+							<p class="air-item__text-last">
+								Установка на створку окна, без фрезеровки. Расход воздуха до
+								31 м3/час, плавная ручная регулировка, размеры
+								350x42,5x8,5/20,5 мм, цвет белый/коричневый.
+							</p>
+							<div class="air-item__price">2500 руб.</div>
+							<div class="air-item__miniText">(с монтажом)</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="air-bottom">
+					<div class="air-bottom__info">
+						<h2 class="air-info__title">Дополнительно рады предложить:</h2>
+						<p class="air-info__text">
+							Фильтр для Air-Box ECO класса <span>G2 - 370 руб</span>
+							Фильтр для Air-Box ECO класса <span>G3 - 340 руб</span>
+							Фильтр для Air-Box ECO класса <span>G4 - 370 руб.</span>
+						</p>
+					</div>
+
+					<img src="images/air-middle-img.png" alt="png" class="air-bottom__img" />
+
+					<p class="air-bottom__text">
+						<span>Приточные клапаны на Окна Air-Box </span> – один из наиболее
+						бюджетных и простых способов обеспечения постоянного проветривания
+						квартир и офисов. Постоянный приток свежего воздуха без шума, пыли
+						и перепадов температур.<span> Клапаны Air-Box</span>
+						зарекомендовали себя, как простой и надежный способ избавления от
+						конденсата на окнах, насыщения воздуха кислородом. Эти клапаны
+						являются пассивными источниками свежего воздуха и для их работы
+						необходимо наличие вытяжки в помещении.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="house">
+			<div class="container">
+				<div class="house-group">
+					<div class="house-group__left">
+						<h2 class="house-left__title">
+							С ЗАБОТОЙ ОБ АТМОСФЕРЕ ВАШЕГО ДОМА!
+						</h2>
+						<div class="house-left__text-first">
+							ПОДГОТОВКА ОКОН К ЗИМЕ И ОБСЛУЖИВАНИЕ ОКОН ОТ ПРОФЕССИОНАЛОВ.
+						</div>
+						<img src="images/house-img-one.png" alt="png" class="house-img" />
+						<button class="house-left__btn">РАССЧИТАТЬ СТОИМОСТЬ</button>
+						<div class="house-left__text-second">
+							*Вы можете рассчитать стоимость услуг онлайн, либо заказать
+							выезд мастера для подробной консультации
+						</div>
+					</div>
+
+					<img src="images/house-img__second.png" alt="png" class="house-right__img" />
+				</div>
+			</div>
+		</section>
+
+
+		<section class="order">
+			<div class="container">
+				<h2 class="order-title">ПОСМОТРИТЕ ФОТО НАШИХ СПЕЦЗАКАЗОВ</h2>
+				<div class="order-group">
+					<div class="order-group__item">
+						<img src="images/item-1.png" alt="png" class="order-item__img" />
+						<h3 class="order-item__title">
+							Небольшое описание
+							<span>фотографии</span>
+						</h3>
+					</div>
+					<div class="order-group__item">
+						<img src="images/item-2.jpg" alt="png" class="order-item__img" />
+						<h3 class="order-item__title">
+							Небольшое описание
+							<span>фотографии</span>
+						</h3>
+					</div>
+					<div class="order-group__item">
+						<img src="images/item-2.jpg" alt="png" class="order-item__img" />
+						<h3 class="order-item__title">
+							Небольшое описание
+							<span>фотографии</span>
+						</h3>
+					</div>
+					<div class="order-group__item">
+						<img src="images/item-1.png" alt="png" class="order-item__img" />
+						<h3 class="order-item__title">
+							Небольшое описание
+							<span>фотографии</span>
+						</h3>
+					</div>
+					<div class="order-group__item">
+						<img src="images/item-3.jpg" alt="png" class="order-item__img" />
+						<h3 class="order-item__title">
+							Небольшое описание
+							<span>фотографии</span>
+						</h3>
+					</div>
+					<div class="order-group__item">
+						<img src="images/item-4.png" alt="png" class="order-item__img" />
+						<h3 class="order-item__title">
+							Небольшое описание
+							<span>фотографии</span>
+						</h3>
+					</div>
+				</div>
+
+				<div class="order-bottom">
+					<i class="fa-solid fa-arrow-left order-icon"></i>
+					<div class="oreder-bottom__group">
+						<div class="order-group__icon"></div>
+						<div class="order-group__icon"></div>
+						<div class="order-group__icon"></div>
+						<div class="order-group__icon"></div>
+						<div class="order-group__icon"></div>
+						<div class="order-group__icon"></div>
+					</div>
+					<i class="fa-solid fa-arrow-right order-icon"></i>
+				</div>
+			</div>
+		</section>
+
+		<section class="company">
+			<div class="container">
+				<div class="company-title">О КОМПАНИИ:</div>
+				<div class="company-top">
+					<div class="company-top__left">
+						<div class="company-left__text">
+							<span> Служба Ремонта Окон на Плоретарской </span> предоставляет
+							услуги в Томске <span>с 2013 г.</span>
+						</div>
+						<div class="company-left__text">
+							<span>Наша деятельность:</span> сервисное обслуживание
+							современных окон и дверей, продажа и установка сопутствующих
+							товаров и аксессуаров, модернизация, дизайнерская отделка и
+							украшение установка вентиляционных приборов.
+						</div>
+						<div class="company-left__text">
+							<span>Наша миссия</span> - решить задачу клиента лучшим образом,
+							самым высоким качеством с использованием современных и надежных
+							технологий и материалов. <span>Наш принцип </span> – соблюдение
+							графика, экономия своего времени и времени Клиента.
+						</div>
+					</div>
+					<div class="company-top__right">
+						<i class="fa-solid fa-arrow-left company-right__icon"></i>
+						<img src="images/company-img-one.jpg" alt="jpg" class="company-top__img" />
+						<i class="fa-solid fa-arrow-right company-left__icon"></i>
+					</div>
+				</div>
+
+				<div class="company-bottom">
+					<!--                         <i class="fa-solid fa-book-open  item-icon "></i> -->
+					<div class="company-left__item">
+						<h2 class="company-left__item-title">
+							СВЯЖИТЕСЬ С НАМИ УДОБНЫМ СПОСОБОМ!
+						</h2>
+						<div class="company-left__item-info">
+							<p class="company-left__info-text">
+								<i class="fa-solid fa-phone info-icon"></i>
+								8 (3822) 30‒35‒41
+							</p>
+							<p class="company-left__info-text">
+								<i class="fa-solid fa-phone info-icon"></i>
+								8 (3822) 30‒35‒41
+							</p>
+							<p class="company-left__info-text">
+								<i class="fa-solid fa-house info-icon"></i>
+								Пролетарская 38В, оф.38
+							</p>
+							<p class="company-left__info-text">
+								<i class="fa-regular fa-envelope info-icon"></i>
+								uspeh-org@yandex.ru
+							</p>
+							<p class="company-left__info-text">
+								<i class="fa-solid fa-globe info-icon"></i>
+								remontokon-tomsk.ru
+							</p>
+						</div>
+						<a href="#!" class="company-left__item-btn">
+							<i class="fa-brands fa-whatsapp"></i> Написать в Whatsapp</a>
+					</div>
+					<!--                         <i class="fa-solid fa-clock item-icon "></i> -->
+					<div class="company-left__item">
+						<h2 class="company-left__item-title">
+							ГРАФИК
+							<span>РАБОТЫ: </span>
+						</h2>
+						<div class="company-left__item-group">
+							<h2 class="company-left__group-title">ОФИС ПРОДАЖ:</h2>
+							<p class="company-left__group-text">
+								пн-пт: с 09:00 до 18:00; обед с 13:00 до 14:00; сб: с 10:00 до
+								16:00;
+							</p>
+						</div>
+						<div class="company-left__item-group">
+							<h2 class="company-left__group-title">МАСТЕРА:</h2>
+							<p class="company-left__group-text">
+								пн-пт: с 10:00 до 20:00; сб: с 11:00 до 16:00;
+							</p>
+						</div>
+					</div>
+					<div class="company-right__item">
+						<img src="images/company-item-img.png" alt="png" class="company-right__item-img">
+						<div class="company-right__item-info">
+							<h2 class="company-right__item-title">
+								Посмотрите другие наши услуги по ремонту и обслуживанию окон
+							</h2>
+							<button class="company-right__item-btn">СМОТРЕТЬ</button>
+						</div>
+					</div>
+					<!-- <div class="company-right__item">
+						<img src="images/right-1.png" alt="png" class="company-img__first">
+						<img src="images/right-2.png" alt="png" class="company-img__second">
+						<h2 class="company-right__item-title">
+							Посмотрите другие наши услуги по ремонту и обслуживанию окон
+						</h2>
+						<button class="company-right__item-btn">СМОТРЕТЬ</button>
+						<img src="images/company-right__img.jpg" alt="jpg" class="company-right__img" />
+					</div> -->
+
+					<div class="company-right__group">
+						<div class="company-group__item-first">
+							<h2 class="company-group__title-first">
+								Организация на карте
+							</h2>
+
+							<iframe class="company-item__map"
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83801.1116207421!2d140.27782215000002!3d48.976621949999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ee05f8ba75b7c0d%3A0x8c00c40edde16b75!2z0KHQvtCy0LXRgtGB0LrQsNGPINCT0LDQstCw0L3RjCwg0KXQsNCx0LDRgNC-0LLRgdC60LjQuSDQutGA0LDQuSwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2s!4v1697196512093!5m2!1sru!2s"
+								width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div class="company-group__item-second">
+							<h2 class="company-group__title-second">
+								Присоединяйтесь к нам в Instagram и VK
+							</h2>
+							<div class="company-group-icon">
+								<i class="fa-brands fa-instagram group-icon__first"></i>
+								<i class="fa-brands fa-facebook group-icon__second"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+
+	<footer class="footer">
+		<div class="footer-group">
+			<div class="footer-top">
+				<div class="footer-top__group">
+					<img src="images/mater-group.png" alt="png" class="footer-group__img" />
+					<div class="footer-group__item">
+						<div class="footer-item__title">
+							ПОЧЕМУ ЛУЧШЕ ВЫЗВАТЬ МАСТЕРА НА ДОМ?
+						</div>
+						<div class="footer-item__info">
+							<i class="fa-regular fa-circle-check footer-icon"></i>
+							<p class="footer-info__text">
+								Вы можете задать все интересующие Вас вопросы;
+							</p>
+						</div>
+						<div class="footer-item__info">
+							<i class="fa-regular fa-circle-check footer-icon__two"></i>
+							<p class="footer-info__text">
+								На месте Мастер может дать адекватную оценку состояния окон, а также подобрать
+								оптимальное решение для Вас;
+							</p>
+						</div>
+						<div class="footer-item__info">
+							<i class="fa-regular fa-circle-check footer-icon"></i>
+							<p class="footer-info__text">
+								Вы получите фиксированный расчет стоимости услуг
+							</p>
+						</div>
+						<button class="footer-right__btn">выезд мастера</button>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer-bottom ">
+				<h2 class="footer-bottom__title">
+					(c) 2020 Служба Ремонта Окон на Плоретарской
+				</h2>
+				<p class="footer-bottom__text">
+					Предложения, указанные на сайте, не являются публичной офертой.
+					Фактическая цена может отличаться от заявленной в зависимости от
+					размеров, комплектации, выбора материалов.
+				</p>
+				<h2 class="footer-bottom__miniTitle">Разработано WebSeversk</h2>
+			</div>
+		</div>
+
+	</footer>
+</body>
+
+</html>

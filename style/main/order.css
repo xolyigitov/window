@@ -1,0 +1,114 @@
+@import "fonts.css";
+
+/* ****Root**** */
+
+:root {
+    --RBlack: "Roboto-Black";
+    --RB: "Roboto-Bold";
+    --RBoldI: "Roboto-BoldItalic";
+    --RI: "Roboto-Italic";
+    --RL: "Roboto-Light";
+    --RM: "Roboto-Medium";
+    --RR: "Roboto-Regular";
+    --Uni: 'ofont.ru_Uni\ Sans';
+    --Gothic: 'ofont.ru_Century\ Gothic';
+    --black: #000;
+    --ligth-black: #2D2D2D;
+    --ligth-green: #25CF43;
+    --grey-black: #484848;
+    --light-grey: #C4C4C4;
+    --grey: #6F6F6F;
+    --blue: #2F6DCE;
+    --v-light-blue: #E8F6FF;
+    --linear-greadient-blue: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%), #CFE900;
+    --ligth-blue: #005AE9;
+    --blue-light: #1567E9;
+    --dark-blue: #113671;
+    --footer-blue: #172233;
+    --white: #fff;
+    --ligth-red: #E05C5C;
+    --red: #FF3939;
+}
+
+/* ****Root end**** */
+
+.order-title {
+    color: var(--white);
+    font-family: var(--Uni);
+    font-size: 32px;
+    line-height: 40px;
+    background: var(--blue);
+    border-radius: 10px;
+    width: 928.084px;
+    padding: 8px 30px;
+    clip-path: polygon(0% 0%, 100% 0, 97% 100%, 0% 100%);
+    margin-top: 96px;
+    margin-bottom: 94px;
+}
+
+.order-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.order-group__item {
+    border-radius: 6px;
+    background: var(--v-light-blue);
+    max-width: 410px;
+    width: 100%;
+}
+
+.order-item__title {
+    color: var(--grey);
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 100%;
+    padding: 22px 82px 38px 20px;
+}
+
+.order-item__title span {
+    display: flex;
+}
+
+.order-item__img{
+    max-width: 410px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.order-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+
+.order-icon {
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--blue-light);
+    margin-left: 80px;
+    margin-right: 50px;
+}
+
+.oreder-bottom__group {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.order-group__icon {
+    border-radius: 4px;
+    border: 5px solid grey;
+    font-size: 12px;
+}
+
+.order-group__icon:hover {
+    border-radius: 4px;
+    border: 1px solid var(--blue);
+    width: 16px;
+    height: 16px;
+    transition: all 300ms;
+}
